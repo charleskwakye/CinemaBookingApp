@@ -19,7 +19,7 @@
              class="flex flex-col md:flex-row md:h-72 lg:h-100 ">
 
             <img class=""
-                 src="storage/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg" alt="">
+                 src="storage/123456.jpg" alt="movie cover">
             <div class="m-2">
                 <h5 class="text-xl font-bold text-gray-900">{{$showtime->movie->title}} <span class="text-sm text-gray-400">({{floor($showtime->movie->length / 60)}}h{{$showtime->movie->length % 60}})</span> </h5>
                 <p class="">{{$showtime->movie->summary}}</p>

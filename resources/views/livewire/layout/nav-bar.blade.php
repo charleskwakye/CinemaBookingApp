@@ -101,7 +101,7 @@
                             @if(auth()->user()->admin)
                                 <div class="block px-4 py-2 text-xs text-gray-400">Admin</div>
                                 <x-jet-dropdown-link href="{{ route('home') }}">Manage users</x-jet-dropdown-link>
-                                <x-jet-dropdown-link href="{{ route('admin.movies o') }}">Manage movies</x-jet-dropdown-link>
+                                <x-jet-dropdown-link href="{{ route('admin.movies') }}">Manage movies</x-jet-dropdown-link>
                                 <x-jet-dropdown-link href="{{ route('home') }}">Manage showtimes</x-jet-dropdown-link>
                             @endif
                         </div>

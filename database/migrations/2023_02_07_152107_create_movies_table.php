@@ -15,7 +15,7 @@ return new class extends Migration {
     {
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
-            $table->integer('tmdb_id')->nullable();
+            $table->integer('tmdb_id');
             $table->string('title');
             $table->integer('length');
             $table->date('release_date');
@@ -30,6 +30,7 @@ return new class extends Migration {
         DB::table('movies')->insert(
             [
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'Avengers: Endgame',
                     'length' => 120,
                     'release_date' => Carbon::parse('2019-04-29 10:00:00'),
@@ -39,6 +40,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'Jurassic Park',
                     'length' => 127,
                     'release_date' => Carbon::parse('1993-06-11 10:00:00'),
@@ -48,6 +50,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'The Shawshank Redemption',
                     'length' => 142,
                     'release_date' => Carbon::parse('1994-09-23 10:00:00'),
@@ -57,6 +60,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'The Godfather',
                     'length' => 175,
                     'release_date' => Carbon::parse('1972-03-24 10:00:00'),
@@ -66,6 +70,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'The Matrix',
                     'length' => 136,
                     'release_date' => Carbon::parse('1999-03-31 10:00:00'),
@@ -75,6 +80,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'Inception',
                     'length' => 148,
                     'release_date' => Carbon::parse('2010-07-16 10:00:00'),
@@ -84,6 +90,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'The Silence of the Lambs',
                     'length' => 118,
                     'release_date' => Carbon::parse('1991-02-14 10:00:00'),
@@ -93,6 +100,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'The Dark Knight',
                     'length' => 152,
                     'release_date' => Carbon::parse('2008-07-18 10:00:00'),
@@ -102,6 +110,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'Pulp Fiction',
                     'length' => 154,
                     'release_date' => Carbon::parse('1994-10-14 10:00:00'),
@@ -111,6 +120,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'Fight Club',
                     'length' => 139,
                     'release_date' => Carbon::parse('1999-10-15 10:00:00'),
@@ -120,6 +130,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'Star Wars: Episode IV - A New Hope',
                     'length' => 121,
                     'release_date' => Carbon::parse('1977-05-25 10:00:00'),
@@ -129,6 +140,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'Forrest Gump',
                     'length' => 142,
                     'release_date' => Carbon::parse('1994-07-06 10:00:00'),
@@ -138,6 +150,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'The Lion King',
                     'length' => 89,
                     'release_date' => Carbon::parse('1994-06-15 10:00:00'),
@@ -147,6 +160,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'The Prestige',
                     'length' => 130,
                     'release_date' => Carbon::parse('2006-10-20 10:00:00'),
@@ -156,6 +170,7 @@ return new class extends Migration {
                     'created_at' => now()
                 ],
                 [
+                    'tmdb_id' => 123456,
                     'title' => 'Goodfellas',
                     'length' => 146,
                     'release_date' => Carbon::parse('1990-09-19 10:00:00'),
