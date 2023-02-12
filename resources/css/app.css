@@ -1,0 +1,12 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@media (max-width: 1024px) {
+    .x {
+        order: 2;
+    }
+    .z {
+        order: 3;
+    }
+}
